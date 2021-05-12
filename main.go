@@ -8,7 +8,7 @@ import (
 func doNothing(res http.ResponseWriter, req *http.Request) {}
 
 func handlerFunc(res http.ResponseWriter, req *http.Request) {
-	fmt.Println("Someone visited our page")
+	res.Header().Set("Content-Type", "text/html")
 	fmt.Fprint(res, "<h1>Welcome to my awesome site!</h1>")
 }
 
