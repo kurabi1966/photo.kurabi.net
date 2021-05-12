@@ -16,3 +16,6 @@
 
 # Don't include our binary
 photo.kurabi.net
+
+# Don't include tmp folder
+tmp
